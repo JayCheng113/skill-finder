@@ -64,6 +64,24 @@ skill-finder/
 
 Covers: Kubernetes, Terraform, Docker, AWS, GCP, React, Python, Rust, PostgreSQL, Redis, Grafana, GitHub Actions, and thousands more.
 
+## skill-finder vs skill-retrieval-mcp
+
+This project is the **zero-setup** companion to [skill-retrieval-mcp](https://github.com/JayCheng113/skill-retrieval-mcp). Same knowledge base, different integration approach.
+
+| | **skill-finder** | **[skill-retrieval-mcp](https://github.com/JayCheng113/skill-retrieval-mcp)** |
+|---|---|---|
+| **What it is** | A single skill file (SKILL.md) | An MCP server |
+| **Setup** | Copy one file | `pip install` + download 1.1GB data + register |
+| **Runs where** | Cloud API (hosted) | Local (your machine) |
+| **Requires MCP** | No | Yes |
+| **Agent support** | Any agent with skills + WebFetch | MCP-compatible agents only |
+| **Latency** | ~200ms (network) | <5ms (local) |
+| **Custom skills** | No (uses hosted DB) | Yes (import your own) |
+| **Offline** | No | Yes |
+
+**Choose skill-finder** if you want instant access with zero setup.
+**Choose [skill-retrieval-mcp](https://github.com/JayCheng113/skill-retrieval-mcp)** if you need local speed, offline access, or custom skills.
+
 ## Self-Hosting
 
 Want to run your own API? The server is a single Python file with zero MCP dependency:
